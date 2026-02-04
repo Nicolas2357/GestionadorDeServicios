@@ -21,6 +21,10 @@ namespace GestionadorDeServicios
             get { return _ciudad; }
             set { _ciudad = value; }
         }
+        public int Id
+        {
+            get { return base.Id; }
+        }
 
         public Empleado(int id, string nombre, string apellido, string telefono, string especialidad, string ciudad)
             : base(id, nombre, apellido, telefono)
