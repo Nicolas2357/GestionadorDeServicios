@@ -59,7 +59,7 @@ namespace GestionadorDeServicios
 
         public double CalcularCostoTotal()
         {
-            double total = 0;
+            double total = _costoEstimado;
             foreach (DetalleServicio d in _detalles)
             {
                 total += d.CalcularSubtotal();
