@@ -30,7 +30,7 @@ namespace GestionadorDeServicios
 
         public double CalcularSubtotal()
         {
-            return _producto.Precio * 1;
+            return _producto.Precio * _cantidad;
         }
     }
 }
