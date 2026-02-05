@@ -17,11 +17,7 @@ namespace GestionadorDeServicios
             set { _direccion = value; }
         }
 
-        public string Telefono
-        {
-            get { return base.Telefono; }
-            set { base.Telefono = value; }
-        }
+       
         public Cliente(int id, string nombre, string apellido, string telefono, string direccion)
             : base(id, nombre, apellido, telefono)
         {
