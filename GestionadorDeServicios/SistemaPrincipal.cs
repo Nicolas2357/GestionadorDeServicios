@@ -47,7 +47,7 @@ namespace GestionadorDeServicios
 
             foreach (OrdenServicio orden in _ordenes)
             {
-                if (orden.Id == idCliente)
+                if (orden.Cliente.Id == idCliente)
                 {
                     Console.WriteLine($"Orden #{orden.Id} | Estado: {orden.Estado} | Total: ${orden.CalcularCostoTotal()}");
                     encontrado = true;
